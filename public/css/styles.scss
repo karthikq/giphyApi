@@ -1,0 +1,181 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  background: #283939;
+}
+
+.container {
+  min-width: 100%;
+  height: 100%;
+  background: #283939;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.main-page {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #283939;
+  z-index: 10;
+  h2 {
+    font-size: 2rem;
+    font-family: "Nunito", sans-serif;
+    color: #76efb1;
+    font-weight: 900;
+    letter-spacing: 1.1px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
+.nav-bar ul {
+  margin-top: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-bar ul li {
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  margin-top: 2rem;
+
+  list-style: none;
+  color: white;
+  animation: slideInFromLeft 2s;
+  transition: all 0.5s;
+  padding: 0.8rem 1.2rem;
+  border-radius: 1px;
+  &:hover {
+    background-color: #76efb1;
+    color: #000;
+  }
+}
+.link {
+  text-decoration: none;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding-top: 1rem;
+
+  button {
+    padding: 0.7rem 1.5rem;
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: slideInFromLeft 2s;
+    background-color: #76efb1;
+    transition: focus 0.5s ease;
+    border-radius: 70px;
+    &:focus {
+      transform: scale(0.9);
+    }
+  }
+}
+.fas {
+  transition: all 0.5s;
+}
+.fas:hover {
+  transform: scale(1.2);
+}
+.input {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  padding: 1rem 2rem;
+  width: 15rem;
+  border: none;
+  outline: none;
+  animation: slideInFromLeft 2s;
+  transition: 0.5s ease;
+  &:focus {
+    width: 17rem;
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.elements {
+  display: flex;
+}
+.img-contents {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.img-content {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  padding: 1rem 0;
+  margin: 1rem 0.5rem;
+  animation: slideInFromup 2s;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+img:hover {
+  transform: scale(1.2);
+  transform: translateY(20px);
+}
+.d {
+  position: absolute;
+  top: 1rem;
+}
+.loading {
+  width: 100px;
+  height: 100px;
+}
+@keyframes slideInFromup {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 439px) {
+  .input {
+    width: 10rem;
+
+    &:focus {
+      width: 12rem;
+    }
+  }
+  .img-content {
+    width: 120px;
+    height: 200px;
+    padding: 1rem 0;
+    margin: 1rem 0.5rem;
+  }
+  .nav-bar ul li {
+    margin-top: 1rem;
+
+    color: white;
+
+    padding: 0.8rem 1.2rem;
+  }
+}
