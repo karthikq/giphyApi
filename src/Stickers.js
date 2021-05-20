@@ -7,7 +7,7 @@ const Stickers = ({ value, state }) => {
   const [content, setContent] = useState([]);
   const [loader, setLoader] = useState(false);
 
-  let apiKey = `KDvwOHtuUPNun5yMluM85OCA3sv6zxWp`;
+  let apiKey = `get your own key`;
   let url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${value}&limit=25&offset=0&rating=g&lang=en`;
   console.warn = () => {};
 
