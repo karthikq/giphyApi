@@ -1,4 +1,4 @@
 # Giphy App
 
 
-Giphy Api was used to fetch the gifs and stickers .
+Giphy Api was used to fetch the gifs and stickers for free .
